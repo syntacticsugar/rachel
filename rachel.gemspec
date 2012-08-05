@@ -1,4 +1,4 @@
- -*- encoding: utf-8 -*-
+ #-*- encoding: utf-8 -*-
 require File.expand_path('../lib/rachel/version', __FILE__)
 
 Gem::Specification.new do |gem|
@@ -14,6 +14,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "rachel"
   gem.require_paths = ["lib"]
+  gem.add_dependency  "rest-client"
   gem.version       = Rachel::VERSION
   gem.post_install_message = %{
   <3 <3 <3 <3 <3 <3
