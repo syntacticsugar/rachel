@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'rachel'
+Rachel.start
