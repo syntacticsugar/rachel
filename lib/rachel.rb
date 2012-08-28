@@ -1,6 +1,6 @@
 require "rachel/version"
 
-module Rachel #Rachel is one of a kind
+module Rachel #Rachel is one of a kind, hence she is a module :D :D
   def self.start   # surveys argv0 from user input and properly delegates the methods 
     case ARGV[0]  
     when "weather"
@@ -12,7 +12,28 @@ module Rachel #Rachel is one of a kind
       puts "A quick glance outside the window of my cozy East Village studio 
       \nreveals the weather to be "
     when "define"
+      
     when "translate"
+      phrase = ARGV[1]
+      language_dictionary = {
+        'Arabic' => 'ar',
+        'Chinese' => 'cn',
+        'Czech' => 'cz',
+        'English' => 'en',
+        'French' => 'fr',
+        'Greek' => 'gr',
+        'Italian' => 'it',
+        'Japanese' => 'ja',
+        'Korean' => 'ko',
+        'Polish' => 'pl',
+        'Portuguese' => 'pt',
+        'Romanian' => 'ro',
+        'Spanish' => 'es',
+        'Turkish' => 'tr'
+      }
+
+    when "thesaurus" || "syn" || "synonym" || "thes"
+      synonym = ARGV[1]
     end
   end
 end
